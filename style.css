@@ -1,0 +1,351 @@
+/*
+Theme Name : Bootstrap Theme 
+Authoe : Insanelap
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+html, body{
+  margin: 0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+}
+/*header*/
+header{
+  position:relative;
+}
+.test{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding-top: 17px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+
+}
+.lc-nav-background{
+  background: rgb(0, 0, 0,.7);
+}
+.lc-nav-background-black{
+    background : black;
+}
+li.nav-item {
+    margin-right: 15px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:#255aaa;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#255aaa;
+}
+a.navebar-brand.lc-logo{
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+svg{
+  margin-right: 5px;
+}
+svg.svg-inline--fa.fa-search.fa-w-16:hover {
+    font-size: larger;
+}
+input.lc-searchInpu.form-control.mr-sm-2 {
+    margin-left: 2px;
+}
+.lc-main-banner{
+  display:block;
+  width:100%
+}
+.lc-header-text{
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height:100%;
+  /*background: rgba(0, 0, 0,.3);*/
+  color:#fff;
+}
+.lc-header-text h1 {
+  font-size: 65px;
+  color: #ffffff;
+  /*margin-top: 200px;*/
+}
+.lc-header-text p {
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.lc-card-content {
+  margin: auto;
+  box-shadow: 0 4px 10px rgb(0, 0, 0,.5);
+}
+.lc-section-title h1 {
+  font-size: 36px;
+  color: #3b4858;
+  padding: 40px;
+}
+hr{
+    width:200px;
+    height: 1px;
+    color:black;
+}
+
+.lc-p p {
+  margin-top: 100px;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  color: #8d8d8d;
+  font-weight: lighter;
+}
+.card {
+    height: 550px;
+    margin-bottom: 30px;
+}
+.lc-cards{
+  padding:5% 0;
+}
+.card-title {
+  margin-bottom: .75rem;
+  color: #3b4858;
+  font-weight: bold;
+}
+
+p.card-text {
+  font-size: 14px;
+  color: #b5b8b8;
+}
+img.card-img-top{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+img.card-img-top:hover {
+  transform: scale(1.02);
+  -webkit-transform : scale(1.02);
+}
+/*single page*/
+.lc-post-content {
+    color: #8d8d8d;
+    font-size:16px;
+    padding: 50px;
+}
+/*footer*/
+.lc-footer-content.padding {
+  width: 90%;
+  margin: auto;
+}
+footer {
+  background: black;
+  color:#fff;
+}
+footer li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  color: #b8b8b8;
+  font-weight: lighter;
+  text-align: left;
+}
+footer p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #b8b8b8;
+  text-align: left;
+}
+footer p.lc-copyright{
+    text-align: center;
+}
+
+footer h5 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+footer ul {
+    padding: 0;
+}
+.searchOverlay {
+    padding: 4px;
+    text-align: center;
+    position: fixed;
+    height: 46px;
+    top: 65px;
+    right: 65px;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0,.7);
+    visibility: hidden;
+    border-radius: 5px;
+    transition : all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+.row.search-group {
+    margin: auto;
+}
+.searchOverlay-active{
+    visibility:visible;
+    transform:scale(1.1);
+    -webkit-transform : scale(1.1);
+}
+input.lc-searchInput {
+    margin-right: 4px;
+    border-radius: 5px;
+    height: 37px;
+}
+.lc-searchTop{
+    background-color: rgba(0,0,0,.12);
+}
+
+button#lc-all-posts{
+    margin-left:70px;
+    margin-top:20px;
+}
+.body-no-scroll{
+    overflow: hidden;
+}
+div#lc-searchResults {
+        text-align: left;
+        margin: 70px;
+}
+div#lc-searchResults ul li {
+    list-style: none;
+}
+
+button.navbar-toggler {
+    background-color: aliceblue;
+}
+/*contact page*/
+#lc-contact form{
+width:80%;
+margin:auto;
+}
+
+button#wpforms-submit-100 {
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+}
+div#wpforms-100 {
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .lc-card-content p.lc-main-text {
+     padding:30px;
+  }
+  .card{
+      height: 620px;
+  }
+  @media(max-width: 846px){
+    .lc-header-text h1{
+        display:none;
+      }
+      .lc-header-text p {
+          display: none;
+      }
+  }
+@media (max-width: 768px) {
+  
+  a.navebar-brand.lc-logo {
+    font-size: 22px;
+  }
+  
+}
+@media (max-width: 576px) {
+  .lc-cards{
+    margin:10%;
+  }
+  footer p {
+    padding:5%;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
